@@ -14,7 +14,10 @@ Perfect for students, researchers, and anyone looking for a hands-on RL playgrou
 
 ---
 
-## 🎮 What’s Inside
+## What’s Inside ?
+
+
+<img src="1dimcart/figures/1dimcart.gif" width="400">
 
 ### 1. Custom Pygame Environments
 - Lightweight, easy-to-understand environments built using Pygame.
