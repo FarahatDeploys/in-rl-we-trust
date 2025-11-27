@@ -1,143 +1,118 @@
-<<<<<<< HEAD
 # in-rl-we-trust
-A curated collection of Reinforcement Learning projects and experiments. This repository brings together multiple small, self-contained RL implementations, from classic control problems to modern deep RL techniques. Designed as a flexible playground for learning, prototyping, and comparing algorithms
-=======
-A collection of interactive environments + RL agents that learn to master them.
 
-Welcome to in-rl-we-trust, a repository that explores how Reinforcement Learning (RL) agents can learn, adapt, and solve a variety of custom-built game environments.
+A curated playground of Reinforcement Learning (RL) projects and experiments. This repository combines multiple small, self-contained RL implementations — from classic control problems to modern deep RL techniques — designed for learning, prototyping, and comparing algorithms.
 
-This repo is built around a simple idea:
+---
 
-Make small, intuitive games — then teach machines how to beat them.
+## Overview
 
-Perfect for students, researchers, and anyone who wants a hands-on playground for RL.
+**in-rl-we-trust** explores how RL agents can learn, adapt, and solve a variety of custom-built game environments. The core idea is simple:
 
-🎮 What’s Inside
-✔ 1. Custom Pygame Environments
+**Create small, intuitive games — then teach machines how to master them.**
 
-Lightweight, easy-to-understand environments built using Pygame.
-Each environment is designed to be:
+Perfect for students, researchers, and anyone looking for a hands-on RL playground.
 
-Simple for humans
+---
 
-Non-trivial for RL agents
+## 🎮 What’s Inside
 
-Fully customizable
+### 1. Custom Pygame Environments
+- Lightweight, easy-to-understand environments built using Pygame.
+- Designed to be simple for humans, yet non-trivial for RL agents.
+- Fully customizable: deterministic or stochastic depending on the experiment.
 
-Deterministic or stochastic depending on the experiment
+### 2. RL Agent Implementations
+- Each environment includes one or more RL agents:
+  - Q-Learning
+  - SARSA
+  - Deep Q-Networks (DQN)
+  - Policy Gradient Agents
+  - Actor–Critic Variants
+  - Custom planners or heuristic agents
+- Provided with:
+  - Training scripts
+  - Evaluation scripts
+  - Reward analysis
+  - Pretrained models
 
-✔ 2. RL Agent Implementations
+### 3. Tutorials
+Step-by-step guides on:
+- Building a Pygame environment
+- Defining state and action spaces
+- Creating reward functions
+- Training RL agents
+- Visualizing and logging training performance
 
-Each environment comes with one or more RL agents, such as:
+---
 
-Q-Learning
+## 🕹 Current Environments
 
-SARSA
+### 1️⃣ Cart Game
+- Horizontal movement game:
+  - Player moves a cart to collect objects
+  - Score increases with movement and object collection
+- Features:
+  - Boundary conditions
+  - Collision detection
+  - Random object spawning
+- RL Challenges:
+  - Sparse rewards
+  - Continuous action space
+  - Exploration vs. exploitation
+  - Time-penalized movement strategies
 
-Deep Q-Networks (DQN)
+📁 Folder: `cart_game/`
 
-Policy Gradient Agents
+---
 
-Actor–Critic Variants
+## 🚧 Coming Soon
+- Inverted Pendulum Simulator
+- Pong-like RL Playground
+- Gridworld Variants
+- Obstacle Avoidance Environment
+- Autonomous Driving Mini-Sim
+- Multi-agent environments  
+- Corresponding RL agents for each
 
-Custom planners or heuristic agents
+---
 
-Agents are provided with:
+## 📦 Repository Structure
 
-Training scripts
+- **cart_game/** — Cart game environment, RL agents, and assets  
+- **pendulum_game/** — Coming soon  
+- **utils/** — Replay buffers, neural networks, wrappers, plotting tools  
+- **notebooks/** — Training analysis and agent visualization notebooks  
+- **README.md** — Project documentation
 
-Evaluation scripts
-
-Reward analysis
-
-Saved models
-
-✔ 3. Tutorials
-
-A step-by-step guide on:
-
-How to build a Pygame environment
-
-How to define a state space and action space
-
-How to create reward functions
-
-How to train RL agents on your environment
-
-How to visualize and log training performance
-
-🕹 Current Environments
-1️⃣ Cart Game
-
-A simple left–right movement game where:
-
-The player moves a cart horizontally
-
-The goal is to collect objects for points
-
-Score increases with movement + object collection
-
-The environment supports boundary conditions, collision detection, and random object spawning
-
-RL challenges:
-
-Sparse reward (objects)
-
-Continuous movement
-
-Exploration vs exploitation
-
-Time-penalized movement strategies
-
-📁 Folder: cart_game/
-
-🚧 Coming Soon
-
-More environments will be added, such as:
-
-Inverted Pendulum Simulator
-
-Pong-like RL Playground
-
-Gridworld Variants
-
-Obstacle Avoidance Environment
-
-Autonomous Driving Mini-Sim
-
-Multi-agent environments
-
-And agents for each.
-
-
-📦 Repository Structure
 in-rl-we-trust/
 │
 ├── cart_game/
-│   ├── cart_game.py
-│   ├── agent_dqn.py
-│   ├── agent_qlearning.py
-│   ├── README.md
-│   └── assets/
+│ ├── cart_game.py
+│ ├── agent_dqn.py
+│ ├── agent_qlearning.py
+│ ├── README.md
+│ └── assets/
 │
 ├── pendulum_game/
-│   └── (coming soon)
+│ └── (coming soon)
 │
 ├── utils/
-│   ├── replay_buffer.py
-│   ├── neural_networks.py
-│   ├── wrappers.py
-│   └── plotting.py
+│ ├── replay_buffer.py
+│ ├── neural_networks.py
+│ ├── wrappers.py
+│ └── plotting.py
 │
 ├── notebooks/
-│   ├── Training_Analysis.ipynb
-│   └── Agent_Visualization.ipynb
+│ ├── Training_Analysis.ipynb
+│ └── Agent_Visualization.ipynb
 │
 └── README.md
 
 
-📩 Contact
 
-If you're interested in robotics, RL, or simulations, feel free to reach out.
+---
+
+## 📩 Contact
+
+If you're interested in robotics, RL, or simulations, feel free to reach out.  
 Happy to collaborate or discuss ideas!
->>>>>>> d996de7 (developed basic cart, within the cart pole balancer !)
