@@ -75,38 +75,32 @@ Step-by-step guides on:
 - Corresponding RL agents for each
 
 ---
-
 ## 📦 Repository Structure
 
-- **cart_game/** — Cart game environment, RL agents, and assets  
-- **pendulum_game/** — Coming soon  
-- **utils/** — Replay buffers, neural networks, wrappers, plotting tools  
-- **notebooks/** — Training analysis and agent visualization notebooks  
-- **README.md** — Project documentation
+A high-level overview of the project folders and their contents:
 
-in-rl-we-trust/
-│
-├── cart_game/
-│ ├── cart_game.py
-│ ├── agent_dqn.py
-│ ├── agent_qlearning.py
-│ ├── README.md
-│ └── assets/
-│
-├── pendulum_game/
-│ └── (coming soon)
-│
-├── utils/
-│ ├── replay_buffer.py
-│ ├── neural_networks.py
-│ ├── wrappers.py
-│ └── plotting.py
-│
-├── notebooks/
-│ ├── Training_Analysis.ipynb
-│ └── Agent_Visualization.ipynb
-│
-└── README.md
+- **cart_game/** — Implementation of the Cart game environment, RL agents, and related assets  
+  - `cart_game.py` — Main environment script  
+  - `agent_dqn.py` — Deep Q-Network agent  
+  - `agent_qlearning.py` — Q-Learning agent  
+  - `README.md` — Environment-specific documentation  
+  - `assets/` — Images, sprites, and other assets used by the environment
+
+- **pendulum_game/** — Inverted pendulum environment (coming soon)  
+
+- **utils/** — Helper modules and utilities for RL experiments  
+  - `replay_buffer.py` — Experience replay buffer  
+  - `neural_networks.py` — Neural network architectures  
+  - `wrappers.py` — Environment wrappers  
+  - `plotting.py` — Visualization tools
+
+- **notebooks/** — Jupyter notebooks for analysis and visualization  
+  - `Training_Analysis.ipynb` — Performance and reward analysis  
+  - `Agent_Visualization.ipynb` — Visualization of agent behavior
+
+- **README.md** — Main project documentation  
+
+
 
 
 
